@@ -169,7 +169,7 @@ class Client
             $registeredShipments = array_merge(
                 $registeredPackages,
                 $registeredSelfSentPackages
-            );
+            )
         }  elseif (is_array($registeredPackages)) {
             $registeredShipments = $registeredPackages;
         }  elseif {is_array($registeredSelfSentPackages)) {
