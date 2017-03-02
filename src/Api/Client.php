@@ -176,7 +176,7 @@ class Client
             $registeredShipments = $registeredSelfSentPackages;
         }  else {
             $registeredShipments = [];
-        }      
+        }    
                    
         return $registeredShipments;
     }
@@ -301,4 +301,22 @@ class Client
             return $response;
         }
     }
+            
+    /**
+     * Get single machine by name (code name)
+     *
+     * @param string $name
+     * @return object|null
+     */
+    public function getMachineByName($name)
+    {
+        $path = '?'.http_build_query([
+                'do' => 'findmachinebyname',
+                'name' => $name
+            ]);
+        $responseXml = $this->getFromEndpoint($path);
+        return count($this->machineFactory->createMachinesList($responseXml)) ? $this->machineFactory->createMachinesList($responseXml)[0] : null;
+    }            
+            
 }
+
