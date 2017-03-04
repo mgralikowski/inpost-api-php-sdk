@@ -165,8 +165,10 @@ class Client
             }, ARRAY_FILTER_USE_BOTH),
             true, true);
 
+        $registeredShipments = array_merge(
             $registeredPackages ?: [],
-            $registeredSelfSentPackages ?: [] 
+            $registeredSelfSentPackages ?: []
+        );
                    
         return $registeredShipments;
     }
