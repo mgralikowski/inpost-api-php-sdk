@@ -1,5 +1,7 @@
 # inpost-api-php-sdk
 
+Fork z małymi poprawkami i dodatkowymi metodami w stosunku do oryginalnej paczki.
+
 Biblioteka PHP do obsługi API usług Inpost (https://b2b.inpost.pl/pl/e-commerce/jak-sie-zintegrowac)
 
 Aktualnie obsługiwana wersja API to **2.1.11**
