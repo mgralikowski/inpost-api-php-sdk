@@ -165,18 +165,8 @@ class Client
             }, ARRAY_FILTER_USE_BOTH),
             true, true);
 
-        if (is_array($registeredPackages) && is_array($registeredSelfSentPackages)) {
-            $registeredShipments = array_merge(
-                $registeredPackages,
-                $registeredSelfSentPackages
-            );
-        }  elseif (is_array($registeredPackages)) {
-            $registeredShipments = $registeredPackages;
-        }  elseif (is_array($registeredSelfSentPackages)) {
-            $registeredShipments = $registeredSelfSentPackages;
-        }  else {
-            $registeredShipments = [];
-        }    
+            $registeredPackages ?: [],
+            $registeredSelfSentPackages ?: [] 
                    
         return $registeredShipments;
     }
