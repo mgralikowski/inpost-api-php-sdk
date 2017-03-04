@@ -1,6 +1,6 @@
-# inpost-api-php-sdk
-
 Fork z małymi poprawkami i dodatkowymi metodami w stosunku do oryginalnej paczki.
+
+# inpost-api-php-sdk
 
 Biblioteka PHP do obsługi API usług Inpost (https://b2b.inpost.pl/pl/e-commerce/jak-sie-zintegrowac)
 
